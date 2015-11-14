@@ -1,0 +1,770 @@
+<!DOCTYPE HTML>
+<html lang="es-PE" class="fade">
+<!--
+  ^ a class of "fade" makes slides fade smoothly into one another
+ -->
+<!-- <html lang="en-US" class="nonumbers"> -->
+<!--
+  If you want no numbers on the slides add a "nonumbers" class
+  to the HTML element.
+  Adding a class of "fade" will make slides fade into another.
+-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Creación de Proyecto Tecnológico con Datos Abiertos</title>
+        <meta name="viewport" content="width=device-width, user-scalable=yes">
+        <link rel="stylesheet" href="themes/mozilla/styles/style.css">
+    </head>
+    <body class="list">
+        <header class="caption">
+            <h1>Creación de Proyecto Tecnológico con Datos Abiertos</h1>
+            <p class="footer">
+                Angel Fernando Quiroz Campos,
+                <a href="https://twitter.com/AngelFQC">@AngelFQC</a>,
+                <a href="mailto:angelfqc@mozilla.pe">angelfqc@mozilla.pe</a>
+            </p>
+        </header>
+
+        <aside class="talkdescription">
+            <p>
+                Esta presentación usa el sistema shower, puedes pasar por encima de cada diapositiva para ver las notas y hacer clic en cualquiera de ellas para ir al modo de presentación. Después puedes usar las teclas para navegar <button onclick="goFullScreen()">Empezar</button>
+            </p>
+            <p class="abstract">
+                <strong>Objetivo: </strong>
+                Formar capacidades en el trabajo con datos abiertos en los distintos participantes. Capacitarlos para la creación de productos tecnológicos como web, aplicaciones, infografías, visualización de datos, mapas, storytelling, internet de las cosas, entre otros, que hagan uso de datos abiertos y permita tener el conocimiento para crear proyectos tecnológicos
+            </p>
+        </aside>
+
+        <div id="cover" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Proyecto Tecnológico con Datos Abiertos</h2>
+                </header>
+                <img src="pictures/datos-abiertos-msi.png" class="middle shadow" height="350" alt="Datos Abiertos MSI">
+                <small class="byline">
+                    Lab San Isidro: Talleres para Creativos y Desarrolladores
+                </small>
+                <footer class="notes">
+                    Convocar a los más talentosos desarrolladores para que formen parte de esta experiencia y generemos juntos un entorno que favorezca a la creatividad, la innovación y la colaboración cívica
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="me" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Acerca de mi</h2>
+                </header>
+                <img src="pictures/angelfqc.jpeg" class="right" width="350" alt="AngelFQC">
+                <ul class="nobull">
+                    <li>Angel Fernando Quiroz Campos</li>
+                    <li>Ingeniero de Sistemas y Computación</li>
+                    <li>Desarrollador Web</li>
+                </ul>
+                <ul class="nobull">
+                    <li>BeezNest -> Chamilo LMS</li>
+                    <li>Mozilla Perú</li>
+                </ul>
+                <ul class="nobull">
+                    <li><a href="https://twitter.com/AngelFQC">@AngelFQC</a></li>
+                    <li><a href="https://angelfqc.wordpress.com">https://angelfqc.wordpress.com</a></li>
+                </ul>
+            </section>
+        </div></div>
+
+        <!-- Temario -->
+        <div id="sat-14" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Sábado 14/11</h2>
+                </header>
+                <ul class="inline">
+                    <li>Portal de Datos Abiertos de la Municipalidad de San Isidro</li>
+                    <li>Cómo usar los datos</li>
+                    <li>Introducción a la API de datos abiertos</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="sat-21" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Sábado 21/11</h2>
+                </header>
+                <ul class="inline">
+                    <li>JavaScript</li>
+                    <li>UnderscoreJS</li>
+                    <li>BackboneJS</li>
+                    <li>RequireJS</li>
+                    <li>Estructura del prototipo de la aplicación</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="sat-28" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Sábado 28/11</h2>
+                </header>
+                <ul class="inline">
+                    <li>Consumo y procesado de API de datos abiertos</li>
+                    <li>Prototipo de la aplicación</li>
+                    <li>Mapas/Gráficos</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="sat-05" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Sábado 05/12</h2>
+                </header>
+                <ul class="inline">
+                    <li>Repositorio público GitHub</li>
+                    <li>Licenciamiento del proyecto</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- Temario -->
+
+        <!-- Creative Commons -->
+        <div id="cc" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2><strong>Creative Commons</strong>: Cultura libre</h2>
+                </header>
+                <footer class="notes">
+                    Explotar todo el potencial de Internet - con un acceso universal a la investigación y educación, y a la participación plena en la cultura - para conducir una nueva era de desarrollo, crecimiento y productividad.
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="cc-intro" class="slide"><div>
+            <section>
+                <header>
+                    <h2>¿Por qué?</h2>
+                </header>
+                <img src="pictures/cc.logo.large.png" class="left" width="700" alt="Firefox OS phones">
+                <ul>
+                    <li>Ceder derechos en determinadas condiciones</li>
+                    <li>No se prohibe el uso. Se autoriza con algunas condiciones</li>
+                    <li>Podemos decidir cómo se puede reproducir nuestra obra a partir del reconocimiento</li>
+                </ul>
+                <small class="credits">
+                    <a href="https://creativecommons.org/about/downloads/">Logo Creative Commons</a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="cc-list" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Las licencias</h2>
+                </header>
+                <ul class="inner">
+                    <li class="active">
+                        Reconocimiento
+                        <img src="pictures/cc/by.png" alt="CC BY"> <em>CC BY</em>
+                    </li>
+                    <li>
+                        Reconocimiento-CompartirIgual
+                        <img src="pictures/cc/by_sa.png" alt="CC BY-SA"> <em>CC BY-SA</em>
+                    </li>
+                    <li>
+                        Reconocimiento-SinObraDerivada
+                        <img src="pictures/cc/by_nd.png" alt="CC BY-ND"> <em>CC BY-ND</em>
+                    </li>
+                    <li>
+                        <strong>Reconocimiento-NoComercial</strong>
+                        <img src="pictures/cc/by_nc.png" alt="CC BY-NC"> <strong><em>CC BY-NC</em></strong>
+                    </li>
+                    <li>
+                        Reconocimiento-NoComercial-CompartirIgual
+                        <img src="pictures/cc/by_nc_sa.png" alt="CC BY-NC-SA"> <em>CC BY-NC-SA</em>
+                    </li>
+                    <li>
+                        Reconocimiento-NoComercial-SinObraDerivada
+                        <img src="pictures/cc/by_nc_nd.png" alt="CC BY-NC-ND"> <em>CC BY-NC-ND</em>
+                    </li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- Creative Commons -->
+
+        <!-- Frameworks -->
+        <div id="bootstrap" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>Bootstrap</h2>
+                </header>
+                <img src="pictures/bootstrap.png" class="middle" alt="Bootstrap">
+                <small class="credits">
+                    <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="foundation" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>Foundation</h2>
+                </header>
+                <img src="pictures/foundation.png" class="middle" alt="Foundation">
+                <small class="credits">
+                    <a href="http://foundation.zurb.com/">http://foundation.zurb.com/</a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- Frameworks -->
+
+        <!-- BackboneJS -->
+        <div id="backbone-intro" class="slide shout"><div>
+            <section>
+                <header>
+                    <h2>Backbone.JS</h2>
+                </header>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="backbone-models-views" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Modelos y Vistas</h2>
+                </header>
+                <img src="pictures/backbone/model-view.svg" class="middle shadow" alt="Modelos y vistas">
+                <small class="credits">
+                    <a href="http://backbonejs.org/#Model-View-separation">
+                        Backbonejs.org
+                    </a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="backbone-collections-models-views" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Colecciones, modelos, vistas</h2>
+                </header>
+                <img src="pictures/backbone/collections.svg" class="middle shadow" alt="Colecciones">
+                <small class="credits">
+                    <a href="http://backbonejs.org/#Model-Collections">
+                        Backbonejs.org
+                    </a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- BackboneJS -->
+
+        <!-- Taller 2: Datos abiertos -->
+        <div id="open-data" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2>Taller 2:<strong><br>Datos abiertos</strong></h2>
+                </header>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="open-data-intro" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos abiertos</h2>
+                </header>
+                <blockquote>
+                    <p>Es la información liberada de la Administración Pública para fomentar la participación ciudadana y generar iniciativas para en beneficio de la sociedad en general.</p>
+                </blockquote>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="politica-municipal" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Política municipal</h2>
+                </header>
+                <blockquote>
+                    <p>Promover la colaboración ciudadana, la creatividad, el acceso a la información y la construcción de ecosistema municipal de innovación abierta</p>
+                </blockquote>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="principios-intro" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Principios de los datos abiertos</h2>
+                </header>
+                <blockquote class="lots">
+                    <p>Información de carácter público, de conformidad con la Ley 27806, Ley de Transparencia y Acceso a la Información Pública, producida por los órganos que conforman la Municipalidad de San Isidro</p>
+                </blockquote>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="principios-list" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Principios de los datos abiertos</h2>
+                </header>
+                <ul class="lots">
+                    <li>Completos</li>
+                    <li>Primarios</li>
+                    <li>Periódicos</li>
+                    <li>Accesibles</li>
+                    <li>Procesables</li>
+                    <li>No discriminación</li>
+                    <li>No propietarios</li>
+                    <li>Sin licencia</li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="datos-liberados" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="des" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Desarrollo humano
+                        <ul>
+                            <li>Jornadas y campañas de salud</li>
+                            <li>Actividades gratuitas OMAPED</li>
+                            <li>Campañas veterinarias</li>
+                            <li>Actividades OMAPED (Oficina Municipal de Atención a la Persona con Discapacidad)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="sost" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Ciudad sostenible
+                        <ul>
+                            <li>Campaña aire limipio – monitoreo</li>
+                            <li>Horarios y rutas recolección selectiva de residuos sólidos</li>
+                            <li>San Isidro recicla: Ruta 1/Martes</li>
+                            <li>San Isidro recicla: Ruta 2/Lunes</li>
+                            <li>San Isidro recicla: Ruta 3 / Jueves</li>
+                            <li>San Isidro recicla: Ruta 4 / Viernes</li>
+                            <li>San Isidro recicla: Viviendas empadronadas</li>
+                        </ul>
+                    </li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="admin-fin-log" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Administración, finanzas y logísticas
+                        <ul>
+                            <li>Órdenes de bienes y servicios</li>
+                            <li>PAC inicial 2015</li>
+                            <li>PAC modificado 2015</li>
+                            <li>Procesos del plan anual</li>
+                            <li>Procesos de selección publicados al SEACE</li>
+                        </ul>
+                    </li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="edu-cult" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Educación y cultura
+                        <ul>
+                            <li>Actividades culturales</li>
+                            <li>Funciones de teatro</li>
+                            <li>Funciones de cine</li>
+                            <li>Cine en tu parque</li>
+                            <li>Cuéntacuentos en espacios públicos</li>
+                            <li>Conciertos</li>
+                            <li>Danzas</li>
+                            <li>Exposiciones</li>
+                            <li>Música en espacios públicos</li>
+                            <li>Plan lector</li>
+                            <li>Videoproyección en espacios públicos</li>
+                            <li>Actividades varias</li>
+                        </ul>
+                    </li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="plan-pre" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Planeamiento y presupuesto
+                        <ul>
+                            <li>Banco de proyectos</li>
+                            <li>Presupuesto PIA Ingresos</li>
+                            <li>Presupuesto PIA Gastos</li>
+                            <li>Presupuesto PIM Ingresos</li>
+                            <li>Presupuesto PIM gastos</li>
+                            <li>Documentos normativos</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="seg" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Seguridad ciudadana
+                        <ul>
+                            <li>Consolidado Intervenciones Serenazgo</li>
+                            <li>Apoyo operativo a PNP</li>
+                            <li>Apoyo a bomberos</li>
+                            <li>Apoyo a PNP</li>
+                            <li>Apoyo y fiscalización</li>
+                            <li>Apoyo a PNP Transito</li>
+                            <li>Consolidado infracciones impuestas</li>
+                            <li>Infracciones obras</li>
+                            <li>Infracciones Defensa Civil</li>
+                            <li>Infracciones comercio vía pública</li>
+                            <li>Infracciones autorizaciones y anuncios</li>
+                            <li>Infracciones sanidad, canes y tabaco</li>
+                            <li>Infracciones otras</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="lic-obras" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Datos liberados</h2>
+                </header>
+                <ul class="oneline">
+                    <li>Licencias de edificación/autorización y control
+                        <ul>
+                            <li>Licencias de funcionamiento vigente</li>
+                            <li>Licencias de funcionamiento</li>
+                            <li>Licencias de edificación</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="oneline">
+                    <li>Obras
+                        <ul>
+                            <li>Proyectos de inversión pública en ejecución y proceso 2015</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div></div>
+        <!-- Datos abiertos -->
+
+        <!-- Ejemplos -->
+        <div id="como-usar-datos-abiertos" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2><strong>Cómo</strong> usar los datos abiertos</h2>
+                </header>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="buildingeye" class="slide"><div>
+            <section>
+                <header>
+                    <h2>BuildingEye</h2>
+                </header>
+                <img src="pictures/ejemplos/buildingeye.jpg" class="right" height="300" alt="BuildingEye">
+                <p>Información de obras en edificios  o en construcción en el vecindario.</p>
+                <p>Muestra permisos de construcción, planificación de proyectos, eventos públicos, licencias de negocio y actividades cívicas.</p>
+                <p class="demourl">
+                    <a href="http://www.buildingeye.com/">http://www.buildingeye.com/</a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="bahiablanca" class="slide"><div>
+            <section>
+                <header>
+                    <h2>¿Qué pasa Bahía Blanca? (Argentina)</h2>
+                </header>
+                <img src="pictures/ejemplos/bahiablanca.jpg" class="right" height="350" alt="¿Qué pasa Bahía Blanca? (Argentina)">
+                <p>Estadisticas sobre contaminación sonora y calidad de aire.</p>
+                <p class="demourl">
+                    <a href="http://www.quepasabahiablanca.gov.ar/">http://www.quepasabahiablanca.gov.ar/</a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="ifarmacias" class="slide"><div>
+            <section>
+                <header>
+                    <h2>iFarmacias (Chile)</h2>
+                </header>
+                <img src="pictures/ejemplos/ifarmacias.jpg" class="right" height="350" alt="iFarmacias (Chile)">
+                <p>Buscar todas las farmacias que están de turno en Chile.</p>
+                <p class="demourl">
+                    <a href="http://ifarmacias.modernizacion.gob.cl/">http://ifarmacias.modernizacion.gob.cl/</a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="mide-univsidad" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Mide Universidad (Chile)</h2>
+                </header>
+                <img src="pictures/ejemplos/mideuniversidad.jpg" class="right" height="300" alt="Mide Universidad (Chile)">
+                <p>Información sobre tasas de titulación y empleo en universidades para que los postulantes tomen decisiones.</p>
+                <p class="demourl">
+                    <a href="http://mideuniversidad.cl/">http://mideuniversidad.cl/</a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- Ejemplos -->
+
+        <!-- MSI API -->
+        <div id="msi-api-intro" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>API de Datos Abiertos de la Municipalidad de San Isidro</h2>
+                </header>
+                <img src="pictures/datos-abiertos-msi.png" class="middle shadow" height="350" alt="Datos Abiertos MSI">
+                <small class="byline">
+                    Lab San Isidro: Talleres para Creativos y Desarrolladores
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="api" class="slide"><div>
+            <section>
+                <header>
+                    <h2>¿Qué es una API?</h2>
+                </header>
+                <img src="pictures/api/api.png" class="middle shadow" width="900" alt="Datos Abiertos MSI">
+                <small class="byline">
+                    Imagen de <a href="https://www.sparkholder.com/api/">Sparkholder</a>
+                </small>
+                <footer class="notes">
+                    <p>Interfaz de Programación de Aplicaciones. Lenguaje o formatos de mensaje para comunicar sistemas distintos</p>
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="como-usar-api" class="slide"><div>
+            <section>
+                <header>
+                    <h2>¿Cómo usar una API?</h2>
+                </header>
+                <ul>
+                    <li>Entender la estructura de la API</li>
+                    <li>Definir la lógica de negocio para procesar los datos</li>
+                    <li>Escribir código para comunicar los sistemas</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="como-usar-api-msi" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2><strong>Cómo</strong> usar la API de <em>Datos Abiertos MSI</em></h2>
+                </header>
+                <small class="byline">
+                    <a href="http://wiki.junar.com/index.php/API">http://wiki.junar.com/index.php/API</a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="api-msi-paso1" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>Paso 1: <strong>Obtener API key</strong></h2>
+                </header>
+                <img src="pictures/api/paso1.png" class="middle shadow" alt="Datos Abiertos MSI">
+                <p class="demourl">
+                    <a href="http://datosabiertos.msi.gob.pe/developers">http://datosabiertos.msi.gob.pe/developers</a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="api-msi-paso2" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>Paso 2: <strong>Elegir categoria</strong></h2>
+                </header>
+                <img src="pictures/api/paso2.png" class="middle" alt="Datos Abiertos MSI">
+                <p class="demourl">
+                    <a href="http://datosabiertos.msi.gob.pe/home/">http://datosabiertos.msi.gob.pe/home/</a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="api-msi-paso3" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>Paso 3: <strong>Obtener GUID</strong></h2>
+                </header>
+                <img src="pictures/api/paso3.png" class="middle" alt="Datos Abiertos MSI">
+                <footer class="notes">
+                    Identificador único general
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="api-msi-paso4" class="slide cover w"><div>
+            <section>
+                <header>
+                    <h2>Paso 4: <strong>Consultar la API</strong></h2>
+                </header>
+                <img src="pictures/api/paso4.png" class="middle" alt="Datos Abiertos MSI">
+                <p class="demourl">
+                    <a href="http://api.datosabiertos.msi.gob.pe/datastreams/invoke/CODIG-ESTAD-OBRAS?auth_key=e4696f5bdfcd2ec26fcddf1c5a61a3c61697b796">
+                        http://api.datosabiertos.msi.gob.pe/datastreams/invoke/<strong>CODIG-ESTAD-OBRAS</strong>?auth_key=<strong>e4696f5bdfcd2ec26fcddf1c5a61a3c61697b796</strong>
+                    </a>
+                </p>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- MSI API -->
+
+        <!-- Ejercicio -->
+        <div id="ejercicio" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2>Ejercicio: <strong>Grupos de Trabajo</strong></h2>
+                </header>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="ejercicio-pasos" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Grupos de Trabajo</h2>
+                </header>
+                <ul>
+                    <li>Conformación de grupos de trabajo</li>
+                    <li>
+                        Concepción de ideas de aplicaciones
+                        <ul>
+                            <li>Idea de aplicación</li>
+                            <li>Objetivo</li>
+                            <li>Problema a resolver</li>
+                        </ul>
+                    </li>
+                    <li>Exposición de ideas acordadas</li>
+                    <li>Elaboración de funcionalidades de las aplicaciones</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="ejercicio-ideas" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Ideas</h2>
+                </header>
+                <ul>
+                    <li><strong>Sus ideas</strong></li>
+                </ul>
+                <ul>
+                    <li>App de campañas de salud para vecinos de San Isidro</li>
+                    <li>App de alertas de recolección de residuos sólidos</li>
+                    <li>Agenda cultural del mes</li>
+                    <li>Búsqueda de información de obras</li>
+                    <li>App informar sobre infracciones/licencias de obras cercanas o específica</li>
+                </ul>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+        <!-- Ejercicio -->
+
+        <div class="progress"><div></div></div>
+        <div id="langMenuDivId"></div>
+        <script src="scripts/script.js"></script>
+        <!-- Copyright © 2010–2012 Vadim Makeev — pepelsbey.net -->
+    </body>
+</html>
