@@ -1,5 +1,5 @@
 var data = {
-    people: [
+    personas: [
         {
             lastName: 'Baggins',
             firstName: 'Froddo'
