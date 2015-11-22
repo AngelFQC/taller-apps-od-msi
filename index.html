@@ -234,7 +234,7 @@
         <!-- Frameworks -->
 
         <!-- BackboneJS -->
-        <div id="backbone-intro" class="slide shout"><div>
+        <div id="backbone" class="slide shout"><div>
             <section>
                 <header>
                     <h2>Backbone.JS</h2>
@@ -243,39 +243,6 @@
                 </footer>
             </section>
         </div></div>
-
-        <div id="backbone-models-views" class="slide"><div>
-            <section>
-                <header>
-                    <h2>Modelos y Vistas</h2>
-                </header>
-                <img src="pictures/backbone/model-view.svg" class="middle shadow" alt="Modelos y vistas">
-                <small class="credits">
-                    <a href="http://backbonejs.org/#Model-View-separation">
-                        Backbonejs.org
-                    </a>
-                </small>
-                <footer class="notes">
-                </footer>
-            </section>
-        </div></div>
-
-        <div id="backbone-collections-models-views" class="slide"><div>
-            <section>
-                <header>
-                    <h2>Colecciones, modelos, vistas</h2>
-                </header>
-                <img src="pictures/backbone/collections.svg" class="middle shadow" alt="Colecciones">
-                <small class="credits">
-                    <a href="http://backbonejs.org/#Model-Collections">
-                        Backbonejs.org
-                    </a>
-                </small>
-                <footer class="notes">
-                </footer>
-            </section>
-        </div></div>
-        <!-- BackboneJS -->
 
         <!-- Taller 2: Datos abiertos -->
         <div id="open-data" class="slide oneline"><div>
@@ -861,6 +828,216 @@
                     </ul>
                 </p>
                 <p><b>Creación de plantilla base</b></p>
+            </section>
+        </div></div>
+
+        <div id="underscore-cover" class="slide"><div>
+            <section>
+                <header>UnderscoreJS</header>
+                <img src="pictures/underscore/underscore.png" class="right" width="100%">
+                <small class="credits">
+                    <a href="http://underscorejs.org/" target="_blank">underscorejs.org</a>
+                    <br>
+                    <a href="https://github.com/jashkenas/underscore/" target="_blank">Repositorio GitHub</a>
+                </small>
+            </section>
+        </div></div>
+
+        <div id="underscore-intro" class="slide"><div>
+            <section>
+                <header>
+                    <h2>UnderscoreJS</h2>
+                </header>
+                <ul>
+                    <li>100+ funciones útiles</li>
+                    <li>Promagar JS más sencillo</li>
+                    <li>De manera funcional u orientada a objetos</li>
+                </ul>
+                <ul class="oneline">
+                    <li>Colecciones (25)</li>
+                    <li>Arrays (20)</li>
+                    <li>Funciones (14)</li>
+                    <li>Objetos (37)</li>
+                    <li>Utilidades (14)</li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="underscore-templates" class="slide"><div>
+            <section>
+                <header>
+                    <h2>_.template(templateString, [settings])</h2>
+                </header>
+                <p>Plantilla</p>
+                <ul class="longlist">
+                    <li>Interpolar: <code><%= name %></code></li>
+                    <li>Evaluar: <code><% alert(type) %></code></li>
+                    <li>Escapar: <code><%- html %></code></li>
+                </ul>
+                <p>Variables</p>
+                <ul class="longlist">
+                    <li><code>{name: 'Proyecto', type: 'Datos abiertos', html: '&lt;strong&gt;API&lt;/strong&gt;'</code></li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="underscore-templates-demo" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Por ejemplo....</h2>
+                </header>
+                <pre>
+                    <code>var templateEl = document.getElementById('template'),</code>
+                    <code>    containerEl = document.getElementById('container');</code>
+                    <code>&nbsp;</code>
+                    <code>var compiled = _.template(templateEl.innerHTML);</code>
+                    <code>&nbsp;</code>
+                    <code>containerEl.innerHTML = compiled(data);</code>
+                </pre>
+                <p class="demourl">
+                    <a href="examples/underscore/templates.html" target="_blank">templates.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="backbone-cover" class="slide"><div>
+            <section>
+                <header>BackboneJS</header>
+                <img src="pictures/backbone/backbone.png" class="right" width="100%">
+                <small class="credits">
+                    <a href="http://backbonejs.org/" target="_blank">backbonejs.org</a>
+                    <br>
+                    <a href="http://github.com/jashkenas/backbone/" target="_blank">Repositorio GitHub</a>
+                </small>
+            </section>
+        </div></div>
+
+        <div id="backbone-intro" class="slide"><div>
+            <section>
+                <header>
+                    <h2>BackboneJS</h2>
+                </header>
+                <p>Estructura la WebApp</p>
+                <ul>
+                    <li>Modelos: Clave-valor, eventos</li>
+                    <li>Colecciones</li>
+                    <li>Vistas: Eventos</li>
+                </ul>
+                <p>RESTful JSON</p>
+            </section>
+        </div></div>
+
+        <div id="backbone-models-views" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Modelos y Vistas</h2>
+                </header>
+                <img src="pictures/backbone/model-view.svg" class="middle shadow" alt="Modelos y vistas">
+                <small class="credits">
+                    <a href="http://backbonejs.org/#Model-View-separation">
+                        Backbonejs.org
+                    </a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="backbone-collections-models-views" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Colecciones, modelos, vistas</h2>
+                </header>
+                <img src="pictures/backbone/collections.svg" class="middle shadow" alt="Colecciones">
+                <small class="credits">
+                    <a href="http://backbonejs.org/#Model-Collections">
+                        Backbonejs.org
+                    </a>
+                </small>
+                <footer class="notes">
+                </footer>
+            </section>
+        </div></div>
+
+        <div id="backbone-model-example" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Creando un modelo</h2>
+                </header>
+                <pre>
+                    <code>var Person = Backbone.Model.extend({</code>
+                    <code>    defaults: {</code>
+                    <code>        lastName: '',</code>
+                    <code>        firstName: ''</code>
+                    <code>    }</code>
+                    <code>});</code>
+                </pre>
+                <p class="demourl">
+                    <a href="examples/backbone/modelo.html" target="_blank">modelo.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="backbone-collection-example" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Creando una colleción</h2>
+                </header>
+                <pre>
+                    <code>var People = Backbone.Collection.extend({</code>
+                    <code>    model: Person</code>
+                    <code>});</code>
+                </pre>
+                <p class="demourl">
+                    <a href="examples/backbone/coleccion.html" target="_blank">coleccion.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="backbone-view-example" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Creando una vista</h2>
+                </header>
+                <pre>
+                    <code>var PersonView = Backbone.View.extend({</code>
+                    <code>    tagName: 'div'</code>
+                    <code>});</code>
+                </pre>
+                <p class="demourl">
+                    <a href="examples/backbone/vista.html" target="_blank">vista.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="require-cover" class="slide"><div>
+            <section>
+                <header>RequireJS</header>
+                <img src="pictures/require/require.png" class="right" width="50%">
+                <small class="credits">
+                    <a href="http://requirejs.org/" target="_blank">requirejs.org</a>
+                    <br>
+                    <a href="https://github.com/jrburke/requirejs/" target="_blank">Repositorio GitHub</a>
+                </small>
+            </section>
+        </div></div>
+
+        <div id="require-example" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Programando</h2>
+                </header>
+                <p class="demourl">
+                    <a href="examples/require/require.html" target="_blank">require.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="taller-4" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2>Taller 4:<strong><br>Desarrollando nuestra app</strong></h2>
+                </header>
             </section>
         </div></div>
 
