@@ -10,17 +10,19 @@
 		<table>
 			<thead>
 				<tr>
-					<tr>ID</tr>
+					<th>ID</th>
 					<th>Apellidos</th>
 					<th>Nombre</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+				<% _.each(personas, function (persona, key) { %>
+					<tr>
+						<td><%= key %></td>
+						<td><%= persona.lastName %></td>
+						<td><%= persona.firstName %></td>
+					</tr>
+				<% }); %>
 			</tbody>
 		</table>
 	</script>
