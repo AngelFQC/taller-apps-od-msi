@@ -967,9 +967,12 @@
                 <pre>
                     <code>var Person = Backbone.Model.extend({</code>
                     <code>    defaults: {</code>
-                    <code>        lastName: '',</code>
-                    <code>        firstName: ''</code>
+                    <code>        lastName: '', firstName: ''</code>
                     <code>    }</code>
+                    <code>});</code>
+                    <code>&nbsp;</code>
+                    <code>var personA = new Person({</code>
+                    <code>    lastName: 'Baggins', firstName: 'Frodo'</code>
                     <code>});</code>
                 </pre>
                 <p class="demourl">
@@ -987,6 +990,10 @@
                     <code>var People = Backbone.Collection.extend({</code>
                     <code>    model: Person</code>
                     <code>});</code>
+                    <code>&nbsp;</code>
+                    <code>var people = new People();</code>
+                    <code>people.add(new Person());</code>
+                    <code>people.add(new Person());</code>
                 </pre>
                 <p class="demourl">
                     <a href="examples/backbone/coleccion.html" target="_blank">coleccion.html</a>
@@ -1001,8 +1008,15 @@
                 </header>
                 <pre>
                     <code>var PersonView = Backbone.View.extend({</code>
-                    <code>    tagName: 'div'</code>
+                    <code>    tagName: 'div',</code>
+                    <code>    render: function () {</code>
+                    <code>    }</code>
                     <code>});</code>
+                    <code>&nbsp;</code>
+                    <code>var view = new PersonView({</code>
+                    <code>    model: new Person()</code>
+                    <code>});</code>
+                    <code>view.render();</code>
                 </pre>
                 <p class="demourl">
                     <a href="examples/backbone/vista.html" target="_blank">vista.html</a>
@@ -1014,6 +1028,8 @@
             <section>
                 <header>RequireJS</header>
                 <img src="pictures/require/require.png" class="right" width="50%">
+                <p>Modular una aplicación</p>
+                <p>Gestionar dependencias</p>
                 <small class="credits">
                     <a href="http://requirejs.org/" target="_blank">requirejs.org</a>
                     <br>
@@ -1022,11 +1038,60 @@
             </section>
         </div></div>
 
-        <div id="require-example" class="slide"><div>
+        <div id="require-example-1" class="slide"><div>
             <section>
                 <header>
-                    <h2>Programando</h2>
+                    <h2>Configurando require.js</h2>
                 </header>
+                <pre>
+                    <code>requirejs.config({</code>
+                    <code>    baseUrl: 'js'</code>
+                    <code>});</code>
+                    <code>&nbsp;</code>
+                    <code>requirejs(['app'], function (App) {</code>
+                    <code>    App.init();</code>
+                    <code>});</code>
+                </pre>
+                <p class="demourl">
+                    <a href="examples/require/require.html" target="_blank">require.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="require-example-2" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Un módulo sin dependencias</h2>
+                </header>
+                <pre>
+                    <code>define({</code>
+                    <code>    init: function () {</code>
+                    <code>        return '¡Hola mundo!';</code>
+                    <code>    }</code>
+                    <code>});</code>
+                </pre>
+                <p class="demourl">
+                    <a href="examples/require/require.html" target="_blank">require.html</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="require-example-3" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Un módulo con dependencias</h2>
+                </header>
+                <pre>
+                    <code>define([jquery], function ($) {</code>
+                    <code>    var initialize = function () {</code>
+                    <code>        return $.now();</code>
+                    <code>    };</code>
+                    <code>&nbsp;</code>
+                    <code>    return {</code>
+                    <code>        init: initialize</code>
+                    <code>    }</code>
+                    <code>});</code>
+                </pre>
                 <p class="demourl">
                     <a href="examples/require/require.html" target="_blank">require.html</a>
                 </p>
