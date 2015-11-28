@@ -4,12 +4,26 @@ requirejs.config({
 		jquery: '../libs/jquery',
 		underscore: '../libs/underscore',
 		text: '../libs/text',
-		template: '../templates'
+		template: '../templates',
+		backbone: '../libs/backbone'
 	}
 });
 
 requirejs([
-	'main'
-], function (main) {
-	main.init();
+	'persona',
+	'personaVista'
+], function (Persona, PersonaVista) {
+	var miPersona = new Persona();
+	miPersona.set({
+		apellido: 'Took',
+		nombre: 'Peregrin'
+	});
+
+	var miPersonaVista = new PersonaVista({
+		model: miPersona
+	});
+
+	$('body').append(
+		miPersonaVista.render().el
+	);
 });
