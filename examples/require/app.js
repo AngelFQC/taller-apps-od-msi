@@ -4,6 +4,6 @@ requirejs.config({
 
 requirejs([
 	'main'
-], function (maink) {
-	mainl.init();
+], function (main, $) {
+	main.init();
 });

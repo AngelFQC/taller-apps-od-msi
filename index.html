@@ -1038,6 +1038,36 @@
             </section>
         </div></div>
 
+        <div id="require-modulos" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Módulos... ¿para qué?</h2>
+                </header>
+                <ul>
+                    <li>Encapsular código como <em>una unidad</em></li>
+                    <li>Referirnos a otros unidades de código</li>
+                    <li>Cargarlos asincrónicamente</li>
+                </ul>
+                <ul>
+                    <li>Un módulo por archivo</li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="require-como" class="slide"><div>
+            <section>
+                <header>
+                    <h2>¿Cómo trabaja RequireJS?</h2>
+                </header>
+                <ul>
+                    <li>Registrar la función de creación usando <code>define()</code></li>
+                    <li>Pasar las dependencias como un array de nombres de módulos</li>
+                    <li>Sólo se ejecuta la función de creación una vez que todas las dependecias fueron cargadas y </li>ejecutadas
+                    <li>Pasar los módulos dependientes como argumentos a la función de creación</li>
+                </ul>
+            </section>
+        </div></div>
+
         <div id="require-example-1" class="slide"><div>
             <section>
                 <header>
@@ -1076,6 +1106,14 @@
             </section>
         </div></div>
 
+        <div id="taller-4" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2>Taller 4:<strong><br>Desarrollando nuestra app</strong></h2>
+                </header>
+            </section>
+        </div></div>
+
         <div id="require-example-3" class="slide"><div>
             <section>
                 <header>
@@ -1098,10 +1136,126 @@
             </section>
         </div></div>
 
-        <div id="taller-4" class="slide oneline"><div>
+        <div id="require-example-4" class="slide"><div>
             <section>
                 <header>
-                    <h2>Taller 4:<strong><br>Desarrollando nuestra app</strong></h2>
+                    <h2>Cargando plantillas</h2>
+                </header>
+                <pre>
+                    <code>define([</code>
+                    <code>    'text!template/index.html'</code>
+                    <code>], function (indexTemplate) {</code>
+                    <code>    var body = document.getElementsByTag('body')[0];</code>
+                    <code>    return {</code>
+                    <code>         render: function () {</code>
+                    <code>            body.innerHTML = indexTemplate;</code>
+                    <code>        };</code>
+                    <code>    };</code>
+                    <code>});</code>
+                </pre>
+            </section>
+        </div></div>
+
+        <div id="nuestra-app" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2><strong>Nuestra app</strong></h2>
+                </header>
+            </section>
+        </div></div>
+
+        <div id="escribir-app-01" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Una idea = Una WebApp</h2>
+                </header>
+                <ul>
+                    <li>Qué API(s) vamos a usar</li>
+                    <li>Qué estructura tienen los datos</li>
+                    <li>Qué modelos/collecciones/vistas necesitamos</li>
+                    <li>Necesitamos alguna API externa</li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="proyecto-intro" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Creación de proyecto</h2>
+                </header>
+                <ul>
+                    <li>Grupos</li>
+                    <li>
+                        Git / GitHub
+                        <ul>
+                            <li>Cuenta de usuario (<a href="http://github.com/join" target="_blank">http://github.com/join</a>)</li>
+                            <li>
+                                GitHub for Desktop (<a href="https://desktop.github.com/" target="_blank">https://desktop.github.com/</a>)<br>o la Terminal
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Repositorio</li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="estructura-app" class="slide"><div>
+            <section>
+                <header>
+                    <h2>Estructura de la aplicación</h2>
+                </header>
+                <ul class="longlist">
+                    <li>
+                        msi-consulta
+                        <ul>
+                            <li>
+                                app
+                                <ul>
+                                    <li>collection</li>
+                                    <li>model</li>
+                                    <li>template</li>
+                                    <li>view</li>
+                                </ul>
+                            </li>
+                            <li>
+                                lib
+                                <ul>
+                                    <li>backbone</li>
+                                    <li>jquery</li>
+                                    <li>require</li>
+                                    <li>underscore</li>
+                                </ul>
+                            </li>
+                            <li>index.html</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div></div>
+
+        <div id="coors" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2><strong>COORS?</strong> :(</h2>
+                </header>
+                <p class="credits">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS" target="_blank">Cross-Origin Resource Sharing</a>
+                </p>
+            </section>
+        </div></div>
+
+        <div id="taller-5" class="slide oneline"><div>
+            <section>
+                <header>
+                    <h2>Taller 5:<strong><br>Gráficos / Mapas<br>Publicación</strong></h2>
+                </header>
+            </section>
+        </div></div>
+
+        <div id="end" class="slide"><div>
+            <section>
+                <header>
+                    <h2></h2>
                 </header>
             </section>
         </div></div>
