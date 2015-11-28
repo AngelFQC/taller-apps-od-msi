@@ -1,0 +1,18 @@
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Apellidos</th>
+			<th>Nombre</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% _.each(personas, function (persona, key) { %>
+			<tr>
+				<td><%= key %></td>
+				<td><%= persona.apellido %></td>
+				<td><%= persona.nombre %></td>
+			</tr>
+		<% }); %>
+	</tbody>
+</table>

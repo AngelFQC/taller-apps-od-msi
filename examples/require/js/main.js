@@ -1,5 +1,28 @@
-define({
-	init: function () {
-		document.getElementsByTagName('body')[0].textContent = 'Hola Mundo!';
-	}
+define([
+	'jquery',
+	'underscore',
+	'text!template/tabla.html'
+], function ($, _, tablaTemplate) {
+	var datos = {
+		personas: [
+			{
+				apellido: 'Baggins',
+				nombre: 'Frodo'
+			},
+			{
+				apellido: 'Baggins',
+				nombre: 'Bilbo'
+			}
+		]
+	};
+
+	return {
+		init: function () {
+			var plantilla = _.template(tablaTemplate);
+
+			$('body').html(
+				plantilla(datos)
+			);
+		}
+	}; 
 });

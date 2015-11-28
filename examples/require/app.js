@@ -1,9 +1,15 @@
 requirejs.config({
-	baseUrl: 'js'
+	baseUrl: 'js',
+	paths: {
+		jquery: '../libs/jquery',
+		underscore: '../libs/underscore',
+		text: '../libs/text',
+		template: '../templates'
+	}
 });
 
 requirejs([
 	'main'
-], function (main, $) {
+], function (main) {
 	main.init();
 });
