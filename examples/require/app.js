@@ -1,9 +1,29 @@
 requirejs.config({
-	baseUrl: 'js'
+	baseUrl: 'js',
+	paths: {
+		jquery: '../libs/jquery',
+		underscore: '../libs/underscore',
+		text: '../libs/text',
+		template: '../templates',
+		backbone: '../libs/backbone'
+	}
 });
 
 requirejs([
-	'main'
-], function (maink) {
-	mainl.init();
+	'persona',
+	'personaVista'
+], function (Persona, PersonaVista) {
+	var miPersona = new Persona();
+	miPersona.set({
+		apellido: 'Took',
+		nombre: 'Peregrin'
+	});
+
+	var miPersonaVista = new PersonaVista({
+		model: miPersona
+	});
+
+	$('body').append(
+		miPersonaVista.render().el
+	);
 });

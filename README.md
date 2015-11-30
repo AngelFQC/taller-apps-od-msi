@@ -10,7 +10,5 @@ Formar capacidades en el trabajo con datos abiertos en los distintos participant
 ¡Revisar [los slides](https://angelfqc.github.io/taller-apps-od-msi/) de las charlas!
 
 [Portal de datos abiertos de la Municipalidad de San Isidro](http://datosabiertos.msi.gob.pe/home/)
-
 [Lab San Isidro](http://msi.gob.pe/portal/innovacion/fablab/)
-
 [Open Data San Isidro en Slack](https://opendata-sanisidro.slack.com/)
