@@ -9,6 +9,21 @@ Formar capacidades en el trabajo con datos abiertos en los distintos participant
 
 ¡Revisar [los slides](https://angelfqc.github.io/taller-apps-od-msi/) de las charlas!
 
+Recursos
+--------
+
 [Portal de datos abiertos de la Municipalidad de San Isidro](http://datosabiertos.msi.gob.pe/home/)
 [Lab San Isidro](http://msi.gob.pe/portal/innovacion/fablab/)
 [Open Data San Isidro en Slack](https://opendata-sanisidro.slack.com/)
+[Retos para la Hackaton](https://hackdash.org/dashboards/sanisidro)
+
+[Contacto AngelFQC](https://twitter.com/AngelFQC)
+github.com/AngelFQC/taller-apps-od-msi
+http://angelfqc.github.io/taller-apps-od-msi/
+
+http://datosabiertos.msi.gob.pe/home/
+
+https://github.com/AngelFQC/msi-consulta
+
+
+http://gcoch.github.io/D3-tutorial/index.html
