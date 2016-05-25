@@ -104,6 +104,7 @@ body:after {
   transform: rotate(45deg);
   border-style: solid;
   border-color: #666;
+  border-color: #666;
   border-width: 1px 0 0 1px;
 }
 .frame::before {
@@ -617,8 +618,9 @@ small.byline{
 	}
 .lots li {
   float: left;
-  width: 33%;
+  width: 45%;
   font-size: 24px;
+  padding-right: 5%;
 }
 .slide ul.lots li:before {
 	content:'\2022'; /* bull */
